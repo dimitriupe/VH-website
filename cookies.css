@@ -129,21 +129,67 @@ header a {
     width: 100%;
 }
 
-ul {
-    align-items: center;
+main {
     height: 100%;
+    width: 60%;
+    display: block;
+    text-align: justify;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    padding-top: 15%;
+}
+
+main a {
+    display: inline;
+    justify-content: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: medium;
+    align-items: center;
     width: 100%;
 }
 
-li {
+main a:hover {
+    color: #eba49d;
+}
+
+main ul {
+    margin-top: 2%;
+    line-height: 25px;
+    
+}
+
+main strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    display: inline;
+}
+
+main img {
+    display: inline;
+    position: absolute;
+    right: 20%;
+    top: 22%;
+}
+
+h2 {
+    padding-top: 15px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+p {
+    line-height: 25px;
+}
+
+.navbar-fixed-top li {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
-}
-
-li:nth-child(2) {
-    text-decoration: underline;
 }
 
 a {
@@ -160,43 +206,12 @@ a:hover {
     color: #eba49d;
 }
 
-main {
-    height: 1300px;
-    display: block;
-}
-
-.pyrgos-pano1 {
-    background-image: url("./img/pano1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 55%;
-    width: 100%;
-    position: relative;
-}
-
-.properties-text {
-    height: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 4%;
-    text-align: center;
-    font-size: x-large;
-    margin-left: 25%;
-    line-height: 30px;
-}
-
-.properties-text h1:first-child {
-    font-size: xx-large;
-}
-
 footer {
     background-color: #333333;
     color: #d9d9d9;
     text-align: center;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     bottom: 0px;
 }
 
@@ -255,3 +270,4 @@ span a {
   footer .heart {
     color: #eba49d;
 }
+
