@@ -39,6 +39,54 @@ const goToTop = () => {
 
 backToTopButton.addEventListener("click", goToTop)
 
+// control slideShow with Keyboard
+
+document.onkeydown = function(e) {
+  switch (e.code) {
+      case 37:
+          //left
+          e.preventDefault();
+          slideIndex--;
+          showSlides(slideIndex);
+          break;
+      case 39:
+          //right
+          e.preventDefault();
+          slideIndex++;
+          showSlides(slideIndex);
+          break;
+  }
+}
+
+// slideShow function of Properties.html
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
 
 // create instance of kinet with custom settings
 
