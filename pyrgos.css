@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -126,7 +127,7 @@ header a {
 
 .navbar-fixed-top {
     display: flex;
-    width: 100%;
+    width: 120%;
 }
 
 ul {
@@ -160,28 +161,7 @@ main {
     height: auto;
     width: 80%;
     margin-left: 10%;
-}
-
-.properties-text {
-    height: auto;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: x-large;
-    margin-left: 20%;
-    line-height: 30px;
-}
-
-.properties-text h1 {
-    font-size: xx-large;
-    margin-top: 20%;
-}
-
-.properties-text p {
-    line-height: 200%;
+    margin-right: 10%;
 }
 
 .mySlides {
@@ -243,7 +223,7 @@ main {
 }
 
 /* Caption text */
-.text {
+/* .text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -251,7 +231,7 @@ main {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
+} */
 
 /* Number text (1/4 etc) */
 .numbertext {
@@ -293,6 +273,422 @@ main {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+.properties-text {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: x-large;
+    margin-left: 10%;
+    line-height: 30px;
+}
+
+.properties-text h1 {
+    font-size: xx-large;
+    margin-top: 20%;
+}
+
+.properties-text p {
+    line-height: 200%;
+}
+
+.properties-text a {
+    display: inline;
+}
+
+.new-developments {
+    margin-top: 5%;
+}
+
+.new-developments p {
+    font-size: large;
+}
+
+.n-d-first-row {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    margin-top: 3%;
+    margin-bottom: -2%;
+    justify-content: space-evenly;
+}
+
+.n-d-first-row-yoo-img {
+    background-image: url('/img/neighbouring developments/Yoo-Limassol.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 100%;
+    transition: opacity 0.5s linear;
+    /* z-index: 0; */
+}
+
+.n-d-first-row-yoo-img:hover {
+    opacity: 20%;
+}
+
+.n-d-first-row-yoo-text {
+    width: 38%;
+    position: absolute;
+    left: 10%;
+    margin-top: 8%;
+    text-align: center;
+    opacity: 0%;
+    transition: opacity 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-yoo-img:hover + .n-d-first-row-yoo-text {
+    opacity: 100%;
+}
+
+.n-d-first-row-yoo-text:hover {
+    opacity: 100%;
+}
+
+.n-d-first-row-yoo-text h3 {
+    font-size: large;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-yoo-text p {
+    font-size: medium;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-yoo-text a {
+    font-size: large;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-top: 3%;
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #d9d9d9;
+    padding: 1%;
+    transition: background-color 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-yoo-text a:hover {
+    background-color: #333333;
+    color: #d9d9d9;
+}
+
+.n-d-first-row-zaria-img {
+    background-image: url('/img/neighbouring developments/Zaria.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 100%;
+    transition: opacity 0.5s linear;
+    z-index: 0;
+}
+
+.n-d-first-row-zaria-img:hover {
+    opacity: 20%;
+}
+
+.n-d-first-row-zaria-text {
+    width: 38%;
+    position: absolute;
+    right: 10%;
+    margin-top: 8%;
+    text-align: center;
+    opacity: 0%;
+    transition: opacity 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-zaria-img:hover + .n-d-first-row-zaria-text {
+    opacity: 100%;
+}
+
+.n-d-first-row-zaria-text:hover {
+    opacity: 100%;
+}
+
+.n-d-first-row-zaria-text h3 {
+    font-size: large;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-zaria-text p {
+    font-size: medium;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-zaria-text a {
+    font-size: large;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-top: 3%;
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #d9d9d9;
+    padding: 1%;
+    transition: background-color 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-first-row-zaria-text a:hover {
+    background-color: #333333;
+    color: #d9d9d9;
+}
+
+.n-d-second-row {
+    display: flex   ;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    padding-left: 0%;
+}
+
+.n-d-second-row-ccc-img {
+    background-image: url('/img/neighbouring developments/Pyrgos-beachfront-development.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    left: 5%;
+    /* margin-top: 1%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 100%;
+    transition: opacity 0.5s linear;
+    z-index: 0;
+}
+
+.n-d-second-row-ccc-img:hover {
+    opacity: 20%;
+}
+
+.n-d-second-row-ccc-text {
+    width: 35%;
+    position: absolute;
+    left: 5%;
+    margin-top: 1%;
+    text-align: center;
+    opacity: 0%;
+    transition: opacity 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-ccc-img:hover + .n-d-second-row-ccc-text {
+    opacity: 100%;
+}
+
+.n-d-second-row-ccc-text:hover {
+    opacity: 100%;
+}
+
+.n-d-second-row-ccc-text h3 {
+    font-size: large;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-ccc-text p {
+    font-size: medium;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-ccc-text a {
+    font-size: large;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-top: 3%;
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #d9d9d9;
+    padding: 1%;
+    transition: background-color 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-ccc-text a:hover {
+    background-color: #333333;
+    color: #d9d9d9;
+}
+
+.n-d-second-row-interc-img {
+    background-image: url('/img/neighbouring developments/intercontinental-limassol.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 43%;
+    width: 14%;
+    height: 50%;
+    /* margin-top: -3%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 100%;
+    transition: opacity 0.5s linear;
+    z-index: 0;
+}
+
+.n-d-second-row-interc-img:hover {
+    opacity: 20%;
+}
+
+.n-d-second-row-interc-text {
+    width: 14%;
+    position: absolute;
+    left: 43%;
+    margin-top: 1%;
+    opacity: 0%;
+    transition: opacity 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-interc-img:hover + .n-d-second-row-interc-text {
+    opacity: 100%;
+}
+
+.n-d-second-row-interc-text:hover {
+    opacity: 100%;
+}
+
+.n-d-second-row-interc-text h3 {
+    font-size: large;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-interc-text p {
+    font-size: medium;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-interc-text a {
+    font-size: large;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #d9d9d9;
+    padding: 1%;
+    transition: background-color 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-interc-text a:hover {
+    background-color: #333333;
+    color: #d9d9d9;
+}
+
+.n-d-second-row-oxley-img {
+    background-image: url('/img/neighbouring developments/sofitel-limassol.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 100%;
+    transition: opacity 0.5s linear;
+    z-index: 0;
+}
+
+.n-d-second-row-oxley-img:hover {
+    opacity: 20%;
+}
+
+.n-d-second-row-oxley-text {
+    width: 35%;
+    position: absolute;
+    right: 5%;
+    margin-top: 2%;
+    text-align: center;
+    opacity: 0%;
+    transition: opacity 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-oxley-img:hover + .n-d-second-row-oxley-text {
+    opacity: 100%;
+}
+
+.n-d-second-row-oxley-text:hover {
+    opacity: 100%;
+}
+
+.n-d-second-row-oxley-text h3 {
+    font-size: large;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-oxley-text p {
+    font-size: medium;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-oxley-text a {
+    font-size: large;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-top: 3%;
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #d9d9d9;
+    padding: 1%;
+    transition: background-color 0.5s linear;
+    /* z-index: -1; */
+}
+
+.n-d-second-row-oxley-text a:hover {
+    background-color: #333333;
+    color: #d9d9d9;
+}
+
+.existing-developments-text p {
+    text-align: left;
+    font-size: large;
+    line-height: 30px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.existing-developments {
+    display: flex;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.existing-developments a:first-child {
+    margin-right: 10%;
+    padding-right: 2%;
+}
+
+.existing-developments a:last-child {
+    margin-left: 10%;
+    padding-left: 2%;
 }
 
 footer {

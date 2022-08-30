@@ -39,24 +39,6 @@ const goToTop = () => {
 
 backToTopButton.addEventListener("click", goToTop)
 
-// control slideShow with Keyboard
-
-document.onkeydown = function(e) {
-  switch (e.code) {
-      case 37:
-          //left
-          e.preventDefault();
-          slideIndex--;
-          showSlides(slideIndex);
-          break;
-      case 39:
-          //right
-          e.preventDefault();
-          slideIndex++;
-          showSlides(slideIndex);
-          break;
-  }
-}
 
 // slideShow function of Properties.html
 
@@ -87,6 +69,24 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// control sildeShow with keyboard
+
+function respondToPressedKey(e) {
+  switch (e.key) {
+    case 'ArrowLeft':
+      // run your ArrowLeft code here
+      plusSlides(-1);
+      console.log('Arrow Left Key Pressed');
+      break;
+    case 'ArrowRight':
+      // run your ArrowRight code here
+      plusSlides(+1);
+      console.log('Arrow Right Key Pressed');
+      break;
+  }
+}
+
+document.body.addEventListener('keydown', respondToPressedKey);
 
 // create instance of kinet with custom settings
 
