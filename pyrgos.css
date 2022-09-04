@@ -208,7 +208,7 @@ main {
 /* Position the "next button" to the right */
 .next {
   right: 20%;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 3px 3px 0;
 }
 
 .prev {
@@ -814,11 +814,12 @@ main {
   }
   
   img.hover-shadow {
-    transition: 0.3s;
+    transition: 0.7s;
   }
   
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 70%;
   }
 
 footer {
