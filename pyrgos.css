@@ -759,7 +759,7 @@ main {
   .nextt {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 55%;
     width: auto;
     padding: 16px;
     margin-top: -50px;

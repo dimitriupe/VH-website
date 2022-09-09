@@ -2,12 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-        <title>Venus Holdings - Real Estate Administrators  | Home Page</title>
+        <title>Venus Holdings - Real Estate Administrators | Contact Us</title>
         <link rel="icon" type="image/x-icon" href="./img/VH favicons/Venus Holdings favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-        <script src="https://cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init({"border":"thick","corners":"small","colors":{"popup":{"background":"gray","text":"#333333","border":"#333333"},"button":{"background":"#333333","text":"#eba49d"}},"position":"bottom-right","padding":"large","transparency":"10","fontsize":"large","content":{"href":"cookies.html","link":"Read our cookies policy","button":"Accept All"}})});</script>
+        <link rel="stylesheet" href="contact.css">
     </head>
     <body>
         <!-- <div id="circle" class="circle"></div>
@@ -20,7 +19,7 @@
         <script src="script.js"></script>
         <header id="navbar">
             <nav id="navigation" class="navbar-fixed-top">
-                <a href="index.html"><img src="img/Venus Holdings dark - Copy.png" alt="Venus Holdings Logo"></a>
+                <a href="index.html"><img src="img/Venus Holdings dark - Copy.png" alt="Venus Holdings Logo" title="Home Page"></a>
                 <ul class="navbar-fixed-top">
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
@@ -29,15 +28,23 @@
             </nav>
         </header>
         <main>
-            <div class="pyrgos-main-img"></div> 
-            <div class="pyrgos-main-text">
-                <a href="/pyrgos.html">
-                    <p>For sale land located at Pyrgos Limassol</p>
-                    <p>Total size 12.710 sq.m.</p>
-                    <p>Unobstructed sea view (just have a look at the photos)</p>
-                    <p>Neighboring developments underway of multimillion value</p>
-                    <p>Lifetime Investment Opportunity</p>
-                </a>
+            <form action="info@venusholdings.eu" method="post" autocomplete="on" name="contactform">
+                <div class="form-title">
+                    <h2>Online Contact Form</h2>
+                    <p>Please leave your message below and we will reply within 24 hours.</p>
+                </div>
+                <label for="fname">First Name</label>
+                <input name="firstname" autocomplete="name" type="string" class="input-first-name">
+                <label for="lname">Last Name</label>
+                <input name="lastname" autocomplete="family-name" type="text">
+                <label for="email">Email</label>
+                <input name="email" autocomplete="email" type="email">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button>Send</button>
+            </form>
+            <div class="picb4footer">
+                <a href="/pyrgos.html">VIEW PROPERTY <br>FOR SALE</a>
             </div>
         </main>
         <footer>
