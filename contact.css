@@ -161,7 +161,7 @@ a:hover {
 }
 
 main {
-    height: 1464px;
+    height: 1565px;
     margin-top: 9.5%;
     margin-bottom: 9.5% ;
 }
@@ -188,49 +188,59 @@ form h2 {
     font-size: xx-large;
 }
 
-form:nth-child(8) {
-    margin-top: 5%;
-}
-
 label {
     text-align: left;
     font-size: larger;
+    padding-left: 1%;
 }
 
 input {
     line-height: 200%;
     width: 100%;
     margin: 1% 0 1% 0;
+    padding: 1% 1%;
     transition: 0.5s;
+    font-family: 'Play', sans-serif;
+    font-size: medium;
+    background-color: #d9d9d9;
+    border: 0.5px solid #333333;
+    border-radius: 5px;
 }
 
 input:hover {
     background-color: #eba49d;
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
 textarea {
     margin: 0% 0 5% 0;
     height: 200px;
     transition: 0.5s;
+    font-family: 'Play', sans-serif;
+    background-color: #d9d9d9;
+    border-radius: 3px;
+    padding: 1% 1%;
 }
 
 textarea:hover {
     background-color: #eba49d;
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
 form button {
     width: 30%;
     margin-left: 35%;
     margin-top: 10%;
-    padding: 3%;
+    padding: 1% 2% 1% 2%;
     background-color: #d9d9d9;
     color: #333333;
-    border-radius: 4px;
+    border-radius: 30px;
+    border: 0.5px solid #333333;
     font-family: 'Play', sans-serif;
     font-size: x-large;
     transition: 0.5s;
+    cursor: pointer;
+    
 }
 
 form button:hover {
