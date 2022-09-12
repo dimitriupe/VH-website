@@ -599,8 +599,8 @@ main {
     color: #d9d9d9;
 }
 
-.n-d-second-row-oxley-img {
-    background-image: url('/img/neighbouring developments/sofitel-limassol.png');
+.n-d-second-row-beyond-img {
+    background-image: url('/img/neighbouring developments/beyond-limassol.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -614,11 +614,11 @@ main {
     z-index: 0;
 }
 
-.n-d-second-row-oxley-img:hover {
+.n-d-second-row-beyond-img:hover {
     opacity: 20%;
 }
 
-.n-d-second-row-oxley-text {
+.n-d-second-row-beyond-text {
     width: 35%;
     position: absolute;
     right: 5%;
@@ -629,27 +629,27 @@ main {
     /* z-index: -1; */
 }
 
-.n-d-second-row-oxley-img:hover + .n-d-second-row-oxley-text {
+.n-d-second-row-beyond-img:hover + .n-d-second-row-beyond-text {
     opacity: 100%;
 }
 
-.n-d-second-row-oxley-text:hover {
+.n-d-second-row-beyond-text:hover {
     opacity: 100%;
 }
 
-.n-d-second-row-oxley-text h3 {
+.n-d-second-row-beyond-text h3 {
     font-size: large;
     text-align: center;
     /* z-index: -1; */
 }
 
-.n-d-second-row-oxley-text p {
+.n-d-second-row-beyond-text p {
     font-size: medium;
     text-align: center;
     /* z-index: -1; */
 }
 
-.n-d-second-row-oxley-text a {
+.n-d-second-row-beyond-text a {
     font-size: large;
     width: 25%;
     margin-left: 37.5%;
@@ -662,7 +662,7 @@ main {
     /* z-index: -1; */
 }
 
-.n-d-second-row-oxley-text a:hover {
+.n-d-second-row-beyond-text a:hover {
     background-color: #333333;
     color: #d9d9d9;
 }
