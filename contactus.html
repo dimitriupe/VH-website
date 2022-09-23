@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venus Holdings - Real Estate Administrators | Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="./img/VH favicons/Venus Holdings favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/contactus.css">
+    <script src="https://kit.fontawesome.com/31ef6f6c9b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+        <button class="back-to-top hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-line   cap="round" stroke-linejoin="round" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+            </svg>
+        </button>
+        <header id="navbar">
+            <nav id="navigation" class="navbar-fixed-top">
+                <a href="index.html"><img src="img/Venus Holdings dark - Copy.png" alt="Venus Holdings Logo" title="Home Page"></a>
+                <ul class="navbar-fixed-top">
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <form action="/form-to-email.php" method="post" autocomplete="on" id="registrationForm" accept-charset="utf-8">
+            <div class="form-title">
+              <h2>Online Contact Form</h2>
+              <p>Please leave your message below and we will contact you within 24 hours.</p>
+            </div>
+            <div class="formGroup flex flex-col my-4">
+              <label for="name">Name</label>
+              <div class="flex items-center">
+                <input
+                  required
+                  minlength="2"
+                  name="name"
+                  type="text"
+                  id="firstName"
+                  autocomplete="name"
+                  placeholder="Enter your name"
+                  class="w-full border-b-2 border-black outline-none py-2"
+                />
+                <span class="error-icon hidden -ml-6 text-red-700"
+                  ><i class="fa-solid fa-circle-exclamation"></i
+                ></span>
+                <span class="success-icon hidden -ml-6 text-green-700"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </div>
+              <div class="error text-red-700 py-2"></div>
+            </div>
+            <div class="formGroup flex flex-col my-4">
+              <label for="surname">Surname</label>
+              <div class="flex items-center">
+                <input
+                  required
+                  minlength="2"
+                  name="surname"
+                  type="text"
+                  id="surname"
+                  autocomplete="family-name"
+                  placeholder="Enter your surname"
+                  class="w-full border-b-2 border-black outline-none py-2"
+                />
+                <span class="error-icon hidden -ml-6 text-red-700"
+                  ><i class="fa-solid fa-circle-exclamation"></i
+                ></span>
+                <span class="success-icon hidden -ml-6 text-green-700"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </div>
+              <div class="error text-red-700 py-2"></div>
+            </div>
+            <div class="formGroup flex flex-col my-4">
+              <label for="company">Company Name</label>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                  autocomplete="organization"
+                  placeholder="Enter your company's name"
+                  class="w-full border-b-2 border-black outline-none py-2"
+                />
+              </div>
+              <div class="error text-red-700 py-2"></div>
+            </div>
+            <div class="formGroup flex flex-col my-4">
+              <label for="email">Email Address</label>
+              <div class="flex items-center">
+                <input
+                  required
+                  pattern="^(.+)@(.+)$"
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  placeholder="Enter your email address"
+                  class="w-full border-b-2 border-black outline-none py-2"
+                />
+                <span class="error-icon hidden -ml-6 text-red-700">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span class="success-icon hidden -ml-6 text-green-700"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </div>
+              <div class="error text-red-700 py-2"></div>
+            </div>
+            <div class="formGroup flex flex-col my-4">
+              <label for="message">Your Message</label>
+              <div class="flex items-center">
+                <textarea 
+                  placeholder="Leave your message here and we will get back to you"
+                  required
+                  id="message"
+                  name="message"
+                  rows="7"
+                  class="w-full color-black outline-none">
+                </textarea>
+                <span class="error-icon hidden -ml-6 text-red-700"
+                  ><i class="fa-solid fa-circle-exclamation"></i
+                ></span>
+                <span class="success-icon hidden -ml-6 text-green-700"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </div>
+              <div class="error text-red-700 py-2"></div>
+            </div>
+            <!-- <div class="formGroup flex flex-col my-4">
+              <label for="confirmPassword">Confirm Password</label>
+              <div class="flex items-center">
+                <input
+                  required
+                  match="password"
+                  type="password"
+                  id="confirmPassword"
+                  class="w-full border-b-2 border-black outline-none py-2"
+                />
+                <span class="error-icon hidden -ml-6 text-red-700"
+                  ><i class="fa-solid fa-circle-exclamation"></i
+                ></span>
+                <span class="success-icon hidden -ml-6 text-green-700"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+              </div>
+              <div class="error text-red-700 py-2"></div>
+            </div> -->
+            <button type="submit">Send</button>
+          </form>
+        </main>
+        <div class="picb4footer">
+          <a href="/pyrgos.html">VIEW PROPERTY <br>FOR SALE</a>
+        </div>
+    <footer>
+      <div class="logo-details">
+          <img src="img/Venus Holdings.png" alt="entity logo" height="200">
+      </div>
+      <span>
+          <p>📱 +357 99-123456 | <a href="info@venusholdings.eu">✉ Send us an Email</a></p>
+      </span>
+      <div class="social">
+          <a href="//www.facebook.com/VenusHoldingsLtd" target="_blank" class="fa fa-facebook"></a>
+          <a href="//www.instagram.com/VenusHoldingsLtd" target="_blank" class="fa fa-instagram"></a>
+          <a href="//www.youtube.com/VenusHoldingsLtd" target="_blank" class="fa fa-youtube"></a>
+          <a href="//www.google.com/VenusHoldingsLtd" target="_blank" class="fa fa-google"></a>
+      </div>
+      <p>© 2022 Venus Holdings. All Rights Reserved.</p><br>
+      <p class="heart">vh♡⌂</p><br>
+    </footer>
+    <script src="/contactus.js"></script>
+  </body>
+</html>
