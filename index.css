@@ -57,7 +57,6 @@ html, body {
     font-family: 'Play', sans-serif;
 	width: 100%;
 	margin: 0 auto;
-    /* perspective: 100%; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,20 +64,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* .circle {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(to top left, #5b5b5b, #a5a5a5);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -20px 0 0 -20px;
-    pointer-events: none;
-    mix-blend-mode: multiply;
-    z-index: 10;
-  } */
 
 .back-to-top {
     position: fixed;
@@ -100,7 +85,7 @@ h1, h2, h3, h4, h5 {
 .back-to-top-icon {
     width: 1rem;
     height: 1rem;
-    color: #eba49d;
+    color: #eba49d; 
 }
 
 .back-to-top:hover {
@@ -154,6 +139,10 @@ a {
 
 a:hover {
     color: #eba49d;
+}
+
+.hamburger {
+    display: none;
 }
 
 main {
@@ -222,7 +211,9 @@ span a {
 
 .social a {
     display: flex;
-    width: 5%;
+    width: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
     height: 50px;
 }
 
@@ -256,4 +247,172 @@ span a {
     color: #eba49d;
 }
 
-/* End of index.html file */
+@media only screen and (min-width: 1536px) {
+    /* For Large Desktop Screens: */
+
+    main {
+        height: 1366px;
+        display: block;
+    }
+
+    .pyrgos-main-text {
+        width: 50%;
+        /* margin-top: 0%; */
+        text-align: center;
+        font-size: larger;
+        margin-left: 25%;
+        transition: transform 0.5s;
+    }
+
+    .pyrgos-main-text p {
+        line-height: 50px;
+    }
+}
+
+@media only screen and (min-width: 1367px) {
+    /* For Desktops: */
+
+    .pyrgos-main-img {
+        background-image: url("./img/pyrgos/seaview3.jpg");
+        background-position: center;    
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .pyrgos-main-text {
+        width: 50%;
+        padding-top: 12%;
+        text-align: center;
+        font-size: small;
+        margin-left: 25%;
+        transition: transform 0.5s;
+        line-height: 40px;
+    }
+        
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    /* For Laptops and Desktops: */
+    
+    li {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: x-large;
+        align-items: center;
+        width: 100%;
+    }
+
+    main {
+        height: 1200px;
+        display: block;
+    }
+
+    .pyrgos-main-img {
+        background-image: url("./img/pyrgos/seaview3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .pyrgos-main-text {
+        width: 70%;
+        padding-top: 14%;
+        text-align: center;
+        font-size: medium;
+        margin-left: 15%;
+        transition: transform 0.5s;
+    }
+        
+}
+
+@media only screen and (min-width: 414px) and (max-width: 1023px) {
+    /* For Tablets */
+
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: larger;
+        align-items: center;
+    }
+
+    main {
+        height: 1000px;
+        display: block;
+    }
+
+    .pyrgos-main-img {
+        background-image: url("./img/pyrgos/seaview3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+    }
+    
+    .pyrgos-main-text {
+        width: 100%;
+        padding-top: 13%;
+        text-align: center;
+        font-size: large;
+        margin-left: 0%;
+        transition: transform 0.5s;
+    }        
+}
+
+@media only screen and (max-width: 414px) {
+    /* For Mobile Phones */
+
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: larger;
+        align-items: center;
+    }
+
+    main {
+        height: 1000px;
+        display: block;
+    }
+
+    .pyrgos-main-img {
+        background-image: url("./img/pyrgos/seaview3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+    }
+    
+    .pyrgos-main-text {
+        width: 100%;
+        padding-top: 15%;
+        text-align: center;
+        font-size: medium;
+        margin-left: 0%;
+        transition: transform 0.5s;
+    }   
+}
