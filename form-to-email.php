@@ -3,53 +3,20 @@
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $company = $_POST['company'];
-    $sender_email = $_POST['email'];
+    $email = $_POST['email'];
     $message = $_POST['message'];
-
-    $email_from = "dimitriupe@gmail.com";
-
-    $email_subject = "Venus Holdings | New Form Submission";
-
-    $email_body = "You have received a new message from $name $surname.\n".
-                            "Read the message below:\n $message".
-
     $to = "dimitriupe@gmail.com";
+    $subject = "Venus Holdings | New Form Submission";
 
-    $headers = "From: $email_from \r\n";
-                         
-    $headers .= "Reply-To: $sender_email \r\n".
-                "X-Mailer: PHP/' . phpversion()";
-                          
-    mail($to, $email_subject, $email_body, $headers);
+    $headers = "From: $email \r\n";
 
-    function IsInjected($str)
-    {
-        $injections = array('(\n+)',
-            '(\r+)',
-            '(\t+)',
-            '(%0A+)',
-            '(%0D+)',
-            '(%08+)',
-            '(%09+)'
-            );
-                
-        $inject = join('|', $injections);
-        $inject = "/$inject/i";
-        
-        if(preg_match($inject,$str))
-        {
-        return true;
-        }
-        else
-        {
-        return false;
-        }
+    $email_body = "You have received a new message from $name $surname.\r\n".
+                    "Read the message below:\r\n $message".
+
+    if ($email!=NULL) {
+        mail($to, $subject, $email_body, $headers);
     }
 
-    if(IsInjected($sender_email))
-    {
-        echo "Invalid email value!";
-        exit;
-    }
+    header('Location:thankyou.html');
 
 ?>

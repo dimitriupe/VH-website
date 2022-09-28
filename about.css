@@ -160,6 +160,10 @@ a:hover {
     color: #eba49d;
 }
 
+.hamburger {
+    display: none;
+}
+
 main {
     height: 100%;
     display: block;
@@ -287,7 +291,9 @@ span a {
 
 .social a {
     display: flex;
-    width: 5%;
+    width: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
     height: 50px;
 }
 
