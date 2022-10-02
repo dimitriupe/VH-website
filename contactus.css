@@ -49,10 +49,14 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
 }
 
 html, body {
+    box-sizing: border-box;
     height: auto;
     font-family: 'Play', sans-serif;
 	width: 100%;
@@ -221,7 +225,7 @@ textarea:hover {
     opacity: 0.7;
 }
 
-form button {
+/* form button {
     width: 40%;
     margin-left: 30%;
     margin-top: 10%;
@@ -239,6 +243,76 @@ form button {
 form button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     color: #eba49d;
+} */
+
+form button {
+    background: #333333;
+    border-bottom: 1px solid white;
+    color: #333333;
+    line-height: 1.4;
+    padding: 0.25em;
+    text-decoration: none;
+}
+
+form button:hover {
+    background: white;
+    color: #333333;
+}
+
+button.btn {
+    color: #333333;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: 500;
+    line-height: 50px;
+    margin: 5% 0 2em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 40%;
+    margin-left: 30%;
+}
+
+button.btn:hover {
+    text-decoration: none;
+}
+
+button.btn-2 {
+    letter-spacing: 0;
+}
+  
+button.btn-2:hover,
+button.btn-2:active {
+    letter-spacing: 5px;
+}
+  
+button.btn-2:after,
+button.btn-2:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: 1px solid white;
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0%;
+ }
+  
+button.btn-2:hover:after,
+button.btn-2:hover:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-color: #333333;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+  
+button.btn-2:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
 }
 
 .picb4footer {
@@ -259,7 +333,7 @@ form button:hover {
     width: 10%;
     height: 45px;
     font-size: medium;
-    margin-top: 19%;
+    margin-top: 15%;
     border-radius: 5px;
     transition: 0.5s;
 }

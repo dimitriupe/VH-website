@@ -141,8 +141,10 @@ a:hover {
     color: #eba49d;
 }
 
+
+
 .hamburger {
-    display: none;
+    display: block;
 }
 
 main {
@@ -155,7 +157,7 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 55%;
+    height: 67%;
     width: 100%;
     position: relative;
 }
@@ -163,7 +165,6 @@ main {
 .pyrgos-main-text {
     height: auto;
     width: 50%;
-    padding-top: 12%;
     text-align: center;
     font-size: x-large;
     margin-left: 25%;
@@ -251,13 +252,13 @@ span a {
     /* For Large Desktop Screens: */
 
     main {
-        height: 1366px;
+        height: 1400px;
         display: block;
     }
 
     .pyrgos-main-text {
         width: 50%;
-        /* margin-top: 0%; */
+        margin-top: -3%;
         text-align: center;
         font-size: larger;
         margin-left: 25%;
@@ -278,11 +279,12 @@ span a {
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+        height: 70%;
     }
     
     .pyrgos-main-text {
         width: 50%;
-        padding-top: 12%;
+        padding-top: 7%;
         text-align: center;
         font-size: small;
         margin-left: 25%;
@@ -292,7 +294,7 @@ span a {
         
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 864px) and (max-width: 1366px) {
     /* For Laptops and Desktops: */
     
     li {
@@ -306,13 +308,13 @@ span a {
         display: flex;
         text-decoration: none;
         color: #333333;
-        font-size: x-large;
+        font-size: large;
         align-items: center;
         width: 100%;
     }
 
     main {
-        height: 1200px;
+        height: 1343px;
         display: block;
     }
 
@@ -326,7 +328,7 @@ span a {
     
     .pyrgos-main-text {
         width: 70%;
-        padding-top: 14%;
+        padding-top: 10%;
         text-align: center;
         font-size: medium;
         margin-left: 15%;
@@ -335,7 +337,7 @@ span a {
         
 }
 
-@media only screen and (min-width: 414px) and (max-width: 1023px) {
+@media only screen and (min-width: 551px) and (max-width: 864px) {
     /* For Tablets */
 
     li {
@@ -348,12 +350,12 @@ span a {
         display: flex;
         text-decoration: none;
         color: #333333;
-        font-size: larger;
+        font-size: medium;
         align-items: center;
     }
 
     main {
-        height: 1000px;
+        height: 1150px;
         display: block;
     }
 
@@ -364,19 +366,27 @@ span a {
         background-repeat: no-repeat;
         position: relative;
         width: 100%;
+        height: 68%;
     }
     
     .pyrgos-main-text {
         width: 100%;
-        padding-top: 13%;
+        padding-top: 11%;
         text-align: center;
-        font-size: large;
         margin-left: 0%;
         transition: transform 0.5s;
-    }        
+    }
+    
+    .social a {
+        display: flex;
+        width: 8%;
+        margin-left: 1%;
+        margin-right: 1%;
+        height: 50px;
+    }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 550px) {
     /* For Mobile Phones */
 
     li {
@@ -389,7 +399,7 @@ span a {
         display: flex;
         text-decoration: none;
         color: #333333;
-        font-size: larger;
+        font-size: medium;
         align-items: center;
     }
 
@@ -409,10 +419,17 @@ span a {
     
     .pyrgos-main-text {
         width: 100%;
-        padding-top: 15%;
+        padding-top: 11%;
         text-align: center;
-        font-size: medium;
         margin-left: 0%;
         transition: transform 0.5s;
-    }   
+    }
+
+    .social a {
+        display: flex;
+        width: 8%;
+        margin-left: 1%;
+        margin-right: 1%;
+        height: 50px;
+    }
 }
