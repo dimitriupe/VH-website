@@ -49,14 +49,10 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: inherit;
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: ease;
+    box-sizing: border-box;
 }
 
 html, body {
-    box-sizing: border-box;
     height: auto;
     font-family: 'Play', sans-serif;
 	width: 100%;
@@ -159,160 +155,29 @@ a:hover {
     display: none;
 }
 
-main {  
-    height: 1450px;
+main {
+    height: 130px;
     margin-top: 9.5%;
     margin-bottom: 9.5%;
     width: 100%;
 }
 
-form {
-    position: relative;
-    margin-left: 20%;
-    width: 60%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 11%;
-    border: 0.5px solid #d9d9d9;
-    line-height: 200%;
-}
-
-.form-title {
-    margin-bottom: 15%;
+.thankyou {
+    background-color: whitesmoke;
     text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+    padding: 2.5%;
+    border-radius: 10px;
 }
 
-form h2 {
+.thankyou h1 {
     font-size: xx-large;
 }
 
-label {
-    text-align: left;
+.thankyou h2 {
     font-size: larger;
-}
-
-input {
-    line-height: 200%;
-    width: 100%;
-    margin: 1% 0 1% 0;
-    padding: 1% 1%;
-    transition: 0.5s;
-    font-family: 'Play', sans-serif;
-    font-size: medium;
-    border: 0;
-    border-bottom: 1px solid black;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-input:hover {
-    opacity: 0.7;
-}
-
-textarea {
-    margin: 1% 0 5% 0;
-    width: 100%;
-    font-family: 'Play', sans-serif;
-    font-size: medium;
-    border: 0.5px solid #d9d9d9;
-    transition: 0.5s;
-    color: #333333;
-}
-
-textarea:hover {
-    opacity: 0.7;
-}
-
-/* form button {
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 10%;
-    padding: 1% 2% 1% 2%;
-    background-color: #d9d9d9;
-    color: #333333;
-    border-radius: 30px;
-    border: 0.5px solid #333333;
-    font-family: 'Play', sans-serif;
-    font-size: x-large;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-form button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    color: #eba49d;
-} */
-
-form button {
-    background: #333333;
-    border-bottom: 1px solid white;
-    color: #333333;
-    line-height: 1.4;
-    padding: 0.25em;
-    text-decoration: none;
-}
-
-form button:hover {
-    background: white;
-    color: #333333;
-}
-
-button.btn {
-    color: #333333;
-    cursor: pointer;
-    font-size: x-large;
-    font-weight: 500;
-    line-height: 50px;
-    margin: 5% 0 2em;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 40%;
-    margin-left: 30%;
-}
-
-button.btn:hover {
-    text-decoration: none;
-}
-
-button.btn-2 {
-    letter-spacing: 0;
-}
-  
-button.btn-2:hover,
-button.btn-2:active {
-    letter-spacing: 5px;
-}
-  
-button.btn-2:after,
-button.btn-2:before {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    border: 1px solid white;
-    bottom: 0px;
-    content: " ";
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    transition: all 280ms ease-in-out;
-    width: 0%;
- }
-  
-button.btn-2:hover:after,
-button.btn-2:hover:before {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    border-color: #333333;
-    transition: width 350ms ease-in-out;
-    width: 70%;
-}
-  
-button.btn-2:hover:before {
-    bottom: auto;
-    top: 0;
-    width: 70%;
 }
 
 .picb4footer {
@@ -331,10 +196,10 @@ button.btn-2:hover:before {
     background-color: #333333;
     color: #eba49d;
     width: 10%;
-    height: 45px;
     font-size: medium;
+    padding: 8px;
+    height: 12%;
     margin-top: 15%;
-    border-radius: 5px;
     transition: 0.5s;
 }
 

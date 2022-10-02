@@ -129,6 +129,10 @@ header a {
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+}
+
 main {
     height: 100%;
     width: 60%;
@@ -237,7 +241,9 @@ span a {
 
 .social a {
     display: flex;
-    width: 5%;
+    width: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
     height: 50px;
 }
 

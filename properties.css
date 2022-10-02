@@ -160,6 +160,10 @@ a:hover {
     color: #eba49d;
 }
 
+.hamburger {
+    display: none;
+}
+
 .pyrgos-pano1 {
     background-image: url("./img/pyrgos/pano1.jpg");
     background-position: center;
@@ -250,7 +254,9 @@ span a {
 
 .social a {
     display: flex;
-    width: 5%;
+    width: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
     height: 50px;
 }
 
