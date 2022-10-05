@@ -109,22 +109,36 @@ header a {
     width: auto;
 }
 
+header span {
+    display: none;
+}
+
 .navbar-fixed-top {
     display: flex;
     width: 100%;
+    flex-direction: row;
+}
+
+.closebtn {
+    display: none;
+}
+
+.overlay-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
 }
 
 ul {
     align-items: center;
     height: 100%;
-    width: 100%;
+    margin-left: -8%;
 }
 
 li {
-    width: 100%;
+    width: 300px;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    justify-content: space-around;
 }
 
 a {
@@ -139,12 +153,6 @@ a {
 
 a:hover {
     color: #eba49d;
-}
-
-
-
-.hamburger {
-    display: block;
 }
 
 main {
@@ -297,14 +305,14 @@ span a {
 @media only screen and (min-width: 864px) and (max-width: 1366px) {
     /* For Laptops and Desktops: */
     
-    li {
+    .nav-item li {
         width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
     
-    a {
+    .nav-link a {
         display: flex;
         text-decoration: none;
         color: #333333;
@@ -337,7 +345,7 @@ span a {
         
 }
 
-@media only screen and (min-width: 551px) and (max-width: 864px) {
+@media only screen and (min-width: 415px) and (max-width: 864px) {
     /* For Tablets */
 
     li {
@@ -386,25 +394,96 @@ span a {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 415px) {
     /* For Mobile Phones */
 
-    li {
+    .navbar-fixed-top {
         display: flex;
-        flex-direction: row;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0%;
+        height: 80%;
+    }
+
+    .nav-logo {
+        visibility: visible;
+        margin-left: 25%;
+        margin-top: 4%;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+        display: flex;
         justify-content: center;
     }
     
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+    
+    .overlay a {
+        display: flex;
+        text-decoration: none;
+        color: #818181;
+        transition: 0.3s;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+      
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: -40px;
+        font-size: 40px;
+    }
+
+    /* .overlay {
+        overflow-y: auto;
+    } */
+    
+    .overlay-content a {
+        font-size: 20px;
+        margin: 20%;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        width: fit-content;
+        color: #333333;
+        background-color: transparent;
+        margin-top: -13%;
+        margin-left: 5%;
+    }
+
     a {
         display: flex;
         text-decoration: none;
         color: #333333;
-        font-size: medium;
+        font-size: small;
         align-items: center;
     }
 
     main {
-        height: 1000px;
+        height: 850px;
         display: block;
     }
 
@@ -414,12 +493,12 @@ span a {
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
-        width: 100%;
+        width: auto;
     }
     
     .pyrgos-main-text {
         width: 100%;
-        padding-top: 11%;
+        padding-top: 8%;
         text-align: center;
         margin-left: 0%;
         transition: transform 0.5s;

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
-        <script src="https://cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init({"border":"thick","corners":"small","colors":{"popup":{"background":"gray","text":"#333333","border":"#333333"},"button":{"background":"#333333","text":"#eba49d"}},"position":"bottom-right","padding":"large","transparency":"10","fontsize":"large","content":{"href":"cookies.html","link":"Read our cookies policy","button":"Accept All"}})});</script>
+        <script src="https://cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init({"border":"thick","corners":"large","colors":{"popup":{"background":"gray","text":"#333333","border":"gray"},"button":{"background":"#333333","text":"#eba49d"}},"position":"bottom-right","padding":"large","transparency":"10","fontsize":"large","content":{"href":"cookies.html","link":"Read our cookies policy","button":"Accept All"}})});</script>
     </head>
     <body>
         <button class="back-to-top hidden">
@@ -18,20 +18,17 @@
         <script src="script.js"></script>
         <header id="navbar">
             <nav id="navigation" class="navbar-fixed-top">
-                <a href="index.html"><img src="img/Venus Holdings dark - Copy.png" alt="Venus Holdings Logo"></a>
-                <ul class="navbar-fixed-top">
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
-                    <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
-                </ul>
+                <a href="index.html" class="nav-logo"><img src="img/Venus Holdings dark - Copy.png" alt="Venus Holdings Logo"></a>
+                <div id="myNav" class="overlay">
+                    <ul class="overlay-content">
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
+                        <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                <span style="font-size:30px;cursor:pointer" class="hamburger" id="hamburger" onclick="openNav()">&#9776;</span>
             </nav>
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburger w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg> -->
-            <input type="checkbox" id="navigation__toggle"></input>
-            <label for="navigation__toggle" class="navigation__burger">
-                <div class="burger"></div>
-            </label>
         </header>
         <main>
             <div class="pyrgos-main-img"></div> 
