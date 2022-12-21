@@ -150,7 +150,7 @@ a {
     justify-content: center;
     text-decoration: none;
     color: #333333;
-    font-size: 1.5vw;
+    font-size: 1vw;
     align-items: center;
     width: 100%;
 }
@@ -267,23 +267,29 @@ span a {
 @media only screen and (min-width: 1536px) {
     /* For Large Desktop Screens: */
 
-    main {
-        height: 1400px;
-        display: block;
+    .pyrgos-main-img {
+        background-image: url("./img/pyrgos/seaview3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: auto;
+        height: 70%;
     }
 
     .pyrgos-main-text {
-        width: 50%;
-        margin-top: -5vw;
+        width: 25%;
+        margin-top: -4vw;
         text-align: center;
-        font-size: xx-large;
         margin-left: 25%;
         transition: transform 0.5s;
     }
 
-    .pyrgos-main-text p {
+    .pyrgos-main-text a > p {
         line-height: 50px;
+        font-size: 1.2vw;
     }
+
 }
 
 @media only screen and (min-width: 1366px) {
@@ -294,19 +300,26 @@ span a {
         margin-left: -10vw;
     }
 
+    .nav-item a {
+        font-size: 1.5vw;
+    }
+
     main {
         height: 1230px;
         display: block;
     }
 
     .pyrgos-main-text {
-        width: 50%;
+        width: 60%;
         padding-top: 5vw;
         text-align: center;
-        font-size: small;
-        margin-left: 25%;
+        margin-left: 20%;
         transition: transform 0.5s;
         line-height: 40px;
+    }
+
+    .pyrgos-main-text p {
+        font-size: 2vw;
     }
     
     .social a {
@@ -362,21 +375,24 @@ span a {
         width: 80%;
         padding-top: 6vw;
         text-align: center;
-        font-size: 0.5vw;
         margin-left: 10vw;
         transition: transform 0.5s;
+    }
+
+    .pyrgos-main-text p {
+        font-size: 2.5vw;
     }
 
     .social a {
         display: flex;
         width: 3%;
-        margin-left: 1.3vw;
-        margin-right: 1.3vw;
+        margin-left: 1.6vw;
+        margin-right: 1.6vw;
         height: 50px;       
     }   
 }
 
-@media only screen and (min-width: 510px) and (max-width: 864px) {
+@media only screen and (min-width: 511px) and (max-width: 864px) {
 
     /* For Tablets */
 
@@ -399,12 +415,16 @@ span a {
 
     ul {
         display: flex;
-        margin-top: 18%;
         width: 100%;
     }
 
     .overlay-content {
         width: 60vw;
+    }
+
+    main {
+        height: 1230px;
+        display: block;
     }
 
     li {
@@ -426,14 +446,14 @@ span a {
     .pyrgos-main-text {
         display: flex;
         width: 100%;
-        padding-top: 17vw;
+        padding-top: 10vw;
         text-align: center;
         margin-left: 0%;
         transition: transform 0.5s;
     }
 
     .pyrgos-main-text p {
-        font-size: 2.5vw;
+        font-size: 3vw;
         color: #333333;
         text-decoration: none;
     }
@@ -441,8 +461,8 @@ span a {
     .social a {
         display: flex;
         width: 7%;
-        margin-left: 3vw;
-        margin-right: 3vw;
+        margin-left: 1.2vw;
+        margin-right: 1.2vw;
         height: 50px;       
     }
 }
