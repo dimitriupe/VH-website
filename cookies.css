@@ -30,6 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -57,7 +60,6 @@ html, body {
     font-family: 'Play', sans-serif;
 	width: 100%;
 	margin: 0 auto;
-    /* perspective: 100%; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,20 +67,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* .circle {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(to top left, #5b5b5b, #a5a5a5);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -20px 0 0 -20px;
-    pointer-events: none;
-    mix-blend-mode: multiply;
-    z-index: 10;
-  } */
 
 .back-to-top {
     position: fixed;
@@ -124,13 +112,54 @@ header a {
     width: auto;
 }
 
+header span {
+    display: none;
+}
+
+.nav-logo {
+    margin-left: 17vw;
+    width: 10vw;
+}
+
 .navbar-fixed-top {
     display: flex;
     width: 100%;
+    flex-direction: row;
 }
 
-.hamburger {
+.closebtn {
     display: none;
+}
+
+.overlay-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+ul {
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1vw;
+    align-items: center;
+    width: 100%;
+}
+
+a:hover {
+    color: #eba49d;
 }
 
 main {
@@ -140,6 +169,7 @@ main {
     text-align: justify;
     margin-left: 20%;
     margin-bottom: 5%;
+    margin-top: auto;
     padding-top: 15%;
 }
 
@@ -215,8 +245,7 @@ footer {
     color: #d9d9d9;
     text-align: center;
     width: 100%;
-    /* height: 100%; */
-    bottom: 0px;
+    margin-top: auto;
 }
 
 span {
@@ -275,9 +304,276 @@ span a {
 
   .fa-tiktok {
     color: #eba49d;
+    
   }
   
   footer .heart {
     color: #eba49d;
 }
 
+@media only screen and (min-width: 1536px) {
+    /* For Large Desktop Screens: */
+
+
+
+}
+
+@media only screen and (min-width: 1366px) {
+    /* For Desktops: */
+ 
+    .overlay-content {
+        width: 60vw;
+        margin-left: -10vw;
+    }
+
+    .nav-item a {
+        font-size: 1.5vw;
+    }
+
+    main {
+        height: 1230px;
+        display: block;
+    }
+    
+    .social a {
+        display: flex;
+        width: 3%;
+        margin-left: 1.1vw;
+        margin-right: 1.1vw;
+        height: 50px;       
+    }   
+}
+
+@media only screen and (min-width: 864px) and (max-width: 1366px) {
+    /* For Laptops and Desktops: */
+
+    .nav-logo {
+        margin-left: 10vw;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        margin-top: 0%;
+        width: 100%;
+    }
+
+    .overlay-content {
+        width: 60vw;
+        margin-left: -5vw;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: left;
+        margin-right: 7vw;
+    }
+
+    .nav-item a {
+        font-size: 2vw;
+    }
+
+    .nav-link3 {
+        width: 18vw;
+    }
+
+    main {
+        height: 1240px;
+        display: block;
+    }
+
+    .social a {
+        display: flex;
+        width: 3%;
+        margin-left: 1.6vw;
+        margin-right: 1.6vw;
+        height: 50px;       
+    }   
+}
+
+@media only screen and (min-width: 511px) and (max-width: 864px) {
+
+    /* For Tablets */
+
+    header {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        background-color: transparent;
+    }
+    
+    .navbar-fixed-top {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .overlay-content {
+        width: 60vw;
+    }
+
+    main {
+        height: 1230px;
+        display: block;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: left;
+        margin-right: 7vw;
+    }   
+
+    .nav-item a {
+        font-size: 2.5vw;
+    }
+
+    .nav-link3 {
+        width: 18vw;
+    }
+
+    .social a {
+        display: flex;
+        width: 7%;
+        margin-left: 1.2vw;
+        margin-right: 1.2vw;
+        height: 50px;       
+    }
+}
+
+@media only screen and (max-width: 510px) {
+
+    /* For Mobile Phones */
+
+    .navbar-fixed-top {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0%;
+        height: 80%;
+    }
+
+    .nav-logo {
+        visibility: visible;
+        margin-left: 17%;
+        margin-top: 5%;
+        width: 50%;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        margin-top: 20%;
+        margin-left: -15%;
+    }
+    
+    .overlay a {
+        display: flex;
+        text-decoration: none;
+        color: #818181;
+        transition: 0.3s;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+      
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 40px;
+    }
+    
+    .overlay-content a {
+        font-size: 20px;
+        margin: 100px;
+    }
+
+    li:nth-child(1) {
+        padding-left: 3.5vw;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        position: absolute;
+        width: fit-content;
+        color: #333333;
+        background-color: transparent;
+        margin-top: 8%;
+        margin-left: 5%;
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: small;
+        align-items: center;
+    }
+
+    main {
+        height: auto;
+        display: block;
+        margin-top: 10vh;
+    }
+
+    h1 {
+        display: block;
+        margin-top: auto;
+        margin-bottom: 5vh;
+        width: 60vw;
+    }
+
+    main > img {
+        width: 15%;
+        display: inline-block;
+        right: 25vw;
+        margin-top: -2%;
+    }
+
+    .social a {
+        display: flex;
+        width: 8%;
+        margin-left: 4%;
+        margin-right: 4%;
+        height: 50px;       
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    /* For Small screens */
+
+    
+}
