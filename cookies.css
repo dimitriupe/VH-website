@@ -30,6 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -107,6 +110,15 @@ header {
 header a {
     margin: 0 15%;
     width: 100%;
+}
+
+header span {
+    display: none;
+}
+
+.nav-logo {
+    margin-left: 17vw;
+    width: 10vw;
 }
 
 header span {
