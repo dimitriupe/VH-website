@@ -165,7 +165,7 @@ a:hover {
 }
 
 .pyrgos-pano1 {
-    background-image: url("./img/pyrgos/pano1.jpg");
+    background-image: url("./img/pyrgos/seaview2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -283,6 +283,10 @@ span a {
   }
   
   .fa-instagram {
+    color: #eba49d;
+  }
+
+  .fa-tiktok {
     color: #eba49d;
   }
   
