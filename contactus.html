@@ -38,7 +38,7 @@
             </svg>            
         </header>
         <main>
-          <form action="form-to-email.php" method="post" autocomplete="on" id="registrationForm" accept-charset="utf-8">
+          <form action="https://formsubmit.co/contactvenusproperties@gmail.com" method="POST" autocomplete="on" id="registrationForm" accept-charset="utf-8">
             <div class="form-title">
               <h2>Online Contact Form</h2>
               <p>Please leave your message below and we will contact you within 24 hours.</p>
@@ -49,9 +49,10 @@
                 <input
                   required
                   minlength="2"
-                  name="name"
+                  name="Name"
                   type="text"
                   id="firstName"
+                  value=""
                   autocomplete="name"
                   placeholder="Enter your name"
                   class="w-full border-b-2 border-black outline-none py-2"
@@ -71,9 +72,10 @@
                 <input
                   required
                   minlength="2"
-                  name="surname"
+                  name="Surname"
                   type="text"
                   id="surname"
+                  value=""
                   autocomplete="family-name"
                   placeholder="Enter your surname"
                   class="w-full border-b-2 border-black outline-none py-2"
@@ -92,8 +94,9 @@
               <div class="flex items-center">
                 <input
                   type="text"
-                  name="company"
+                  name="Company"
                   id="company"
+                  value=""
                   autocomplete="organization"
                   placeholder="Enter your company's name"
                   class="w-full border-b-2 border-black outline-none py-2"
@@ -108,7 +111,8 @@
                   required
                   pattern="^(.+)@(.+)$"
                   type="email"
-                  name="email"
+                  name="Email"
+                  value=""
                   id="email"
                   autocomplete="email"
                   placeholder="Enter your email address"
@@ -126,11 +130,12 @@
             <div class="formGroup flex flex-col my-4">
               <label for="message">Your Message</label>
               <div class="flex items-center">
-                <textarea 
+                <textarea
                   placeholder="Leave your message here and we will get back to you"
                   required
                   id="message"
-                  name="message"
+                  name="Message"
+                  value=""
                   rows="7"
                   class="w-full color-black outline-none">
                 </textarea>
@@ -143,27 +148,11 @@
               </div>
               <div class="error text-red-700 py-2"></div>
             </div>
-            <!-- <div class="formGroup flex flex-col my-4">
-              <label for="confirmPassword">Confirm Password</label>
-              <div class="flex items-center">
-                <input
-                  required
-                  match="password"
-                  type="password"
-                  id="confirmPassword"
-                  class="w-full border-b-2 border-black outline-none py-2"
-                />
-                <span class="error-icon hidden -ml-6 text-red-700"
-                  ><i class="fa-solid fa-circle-exclamation"></i
-                ></span>
-                <span class="success-icon hidden -ml-6 text-green-700"
-                  ><i class="fa-solid fa-circle-check"></i
-                ></span>
-              </div>
-              <div class="error text-red-700 py-2"></div>
-            </div> -->
             <button type="submit" class="btn btn-2">Send</button>
+            <input type="hidden" name="_next" value="http://www.venusholdings.eu/thankyou.html">
+            <input type="hidden" name="_autoresponse" value="Thank you for your message. We will get back to you the soonest possible!">
           </form>
+          <script src="/contactus.js"></script>
         </main>
         <div class="picb4footer">
           <a href="/pyrgos.html">VIEW PROPERTY <br>FOR SALE</a>
@@ -182,9 +171,8 @@
           <a href="https://maps.app.goo.gl/W5tmagbVcbmrDaF49" target="_blank" class="fa fa-google"></a>
           <a href="https://www.tiktok.com/@venusholdings" target="_blank" class="fa-brands fa-tiktok"></a>
       </div>
-      <p>© 2022 Venus Holdings. All Rights Reserved.</p><br>
+      <p>© 2023 Venus Holdings. All Rights Reserved.</p><br>
       <p class="heart">vh♡⌂</p><br>
     </footer>
-    <script src="/contactus.js"></script>
   </body>
 </html>
