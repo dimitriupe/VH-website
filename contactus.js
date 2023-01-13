@@ -39,6 +39,15 @@ const goToTop = () => {
 
 backToTopButton.addEventListener("click", goToTop)
 
+// Open and Close Fullscreen Nav // 
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
 
 // Form validation
 
@@ -134,7 +143,7 @@ const validateForm = formSelector => {
   };
 
   // Disable HTML5 Validation
-  formElement.setAttribute('novalidate', '');
+  formElement.setAttribute('novalidate', true);
 
   // Enable validation for each control whilst updating form
   Array.from(formElement.elements).forEach(element =>
@@ -145,7 +154,7 @@ const validateForm = formSelector => {
 
   // Only validate form when submitting
   formElement.addEventListener('submit', event => {
-    event.preventDefault();
+    // event.preventDefault();
     validateAllFormGroups(formElement);
   });
 };

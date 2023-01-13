@@ -1,22 +1,44 @@
 <?php
 
-    $name = $_POST['name'];
-    $surname = $_POST['surname'];
-    $company = $_POST['company'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $to = "dimitriupe@gmail.com";
-    $subject = "Venus Holdings | New Form Submission";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    $headers = "From: $email \r\n";
+require '/PHPMailer-master/src/Exception.php';
+require '/PHPMailer-master/src/PHPMailer.php';
+require '/PHPMailer-master/src/SMTP.php';
 
-    $email_body = "You have received a new message from $name $surname.\r\n".
-                    "Read the message below:\r\n $message".
+if(isset($_POST["send"])){
+    $mail = new PHPMailer(true);
 
-    if ($email!=NULL) {
-        mail($to, $subject, $email_body, $headers);
-    }
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'contactvenusproperties@gmail.com';
+    $mail->Password = 'gbcpcqozvctqhxgf';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
 
-    header('Location:thankyou.html');
+    $mail->setFrom('contactvenusproperties@gmail.com');
+
+    $mail->addAddress($_POST["email"]);
+
+    $mail->isHTML(true);
+
+    $mail->Name = $_POST["name"];
+    $mail->Surname = $_POST["surname"];
+    $mail->Company = $_POST["company"];
+    $mail->Body = $_POST["message"];
+
+    $mail->send();
+
+    echo
+    "
+    <script>
+        alert('Email sent successfully');
+        document.location.href = '/thankyou.html';
+    </script>
+    ";
+
+}
 
 ?>
