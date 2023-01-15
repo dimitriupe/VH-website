@@ -57,7 +57,6 @@ html, body {
     font-family: 'Play', sans-serif;
 	width: 100%;
 	margin: 0 auto;
-    /* perspective: 100%; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,20 +64,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* .circle {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(to top left, #5b5b5b, #a5a5a5);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -20px 0 0 -20px;
-    pointer-events: none;
-    mix-blend-mode: multiply;
-    z-index: 10;
-  } */
 
 .back-to-top {
     position: fixed;
@@ -121,25 +106,43 @@ header {
 
 header a {
     margin: 0 15%;
-    width: auto;
+    width: 100%;
+}
+
+header span {
+    display: none;
+}
+
+.nav-logo {
+    margin-left: 17vw;
+    width: 10vw;
 }
 
 .navbar-fixed-top {
     display: flex;
     width: 100%;
+    flex-direction: row;
+}
+
+.closebtn {
+    display: none;
+}
+
+.overlay-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
 }
 
 ul {
     align-items: center;
     height: 100%;
-    width: 100%;
 }
 
 li {
-    width: 100%;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    justify-content: center;
 }
 
 li:nth-child(2) {
@@ -151,7 +154,7 @@ a {
     justify-content: center;
     text-decoration: none;
     color: #333333;
-    font-size: x-large;
+    font-size: 1vw;
     align-items: center;
     width: 100%;
 }
@@ -169,13 +172,13 @@ a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 713px;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
 
 main {
-    height: 900px;
+    height: 100%;
     display: block;
 }
 
@@ -191,8 +194,8 @@ main {
     line-height: 30px;
 }
 
-.properties-text h1:first-child {
-    font-size: xx-large;
+.properties-text h1 {
+    font-size: 2.5vw;
 }
 
 .portfolio {
@@ -210,11 +213,11 @@ main {
     text-align: center;
     margin-bottom: 5%;
     transition: transform 1s, filter 2s ease-in-out;
-    filter: blur(0.65px);
+    /* filter: blur(0.65px); */
 }
 
 .polaroid:hover {
-    filter: blur(0);
+    /* filter: blur(0); */
     transform: scale(1.03);
 }
   
@@ -292,4 +295,489 @@ span a {
   
   footer .heart {
     color: #eba49d;
+}
+
+@media only screen and (min-width: 1535px) {
+    /* For Large Desktop Screens: */
+
+    .nav-logo {
+        margin-left: 1vw;
+        width: 100%;
+    }
+
+    .overlay-content {
+        width: 60vw;
+        margin-left: -12vw;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 9vw;
+    }
+
+    .nav-item a {
+        font-size: 1.5vw;
+    }
+
+    main {
+        height: auto;
+        display: block;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+
+    h1 {
+        display: block;
+        margin-top: auto;
+        margin-bottom: 5vh;
+        width: auto;
+    }
+
+    .portfolio :nth-child(4) img {
+        height: 37vh;
+        width: 100%;
+    }
+
+    .social a {
+        display: flex;
+        width: 2%;
+        margin-left: 1.2%;
+        margin-right: 1.2%;
+        height: 50px;       
+    }
+
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1535px) {
+    /* For Desktops: */
+ 
+    .nav-logo {
+        margin-left: 1vw;
+        width: 100%;
+    }
+
+    .overlay-content {
+        width: 60vw;
+        margin-left: -12vw;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-right: 7vw;
+    }
+
+    .nav-item a {
+        font-size: 1.5vw;
+    }
+
+    .nav-link3 {
+        width: 8vw;
+    }
+
+    main {
+        height: auto;
+        display: block;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+
+    .portfolio :nth-child(4) img {
+        height: 37.5vh;
+        width: 100%;
+    }
+
+    .social a {
+        display: flex;
+        width: 2%;
+        margin-left: 1.2%;
+        margin-right: 1.2%;
+        height: 50px;    
+    }   
+}
+
+@media only screen and (min-width: 864px) and (max-width: 1366px) {
+    /* For Laptops and Desktops: */
+
+    .nav-logo {
+        margin-left: 1vw;
+        width: 100%;
+    }
+
+    .overlay-content {
+        width: 60vw;
+        margin-left: -12vw;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-right: 7vw;
+    }
+
+    .nav-item a {
+        font-size: 2vw;
+    }
+
+    .nav-link3 {
+        width: 14vw;
+    }
+
+    main {
+        height: auto;
+        display: block;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+
+    .properties-text {
+        margin-left: 34%;
+        width: 32%;
+    }
+
+    .properties-text h1 {
+        font-size: 3vw;
+    }
+
+    .portfolio {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-top: 2.5%;
+    }
+
+    .portfolio :nth-child(4) img {
+        height: 37.5vh;
+        width: 100%;
+    }
+
+    .social a {
+        display: flex;
+        width: 3%;
+        margin-left: 1.8%;
+        margin-right: 1.8%;
+        height: 50px;       
+    }
+
+}
+
+@media only screen and (min-width: 510px) and (max-width: 864px) {
+
+    /* For Tablets */
+
+    .nav-logo {
+        margin-left: 1vw;
+        width: 100%;
+    }
+
+    .overlay-content {
+        width: 60vw;
+        margin-left: -12vw;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-right: 7vw;
+    }
+
+    .nav-item a {
+        font-size: 2.5vw;
+    }
+
+    .nav-link3 {
+        width: 18vw;
+    }
+
+    main {
+        height: auto;
+        display: block;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+
+    .properties-text {
+        margin-left: 28.5%;
+        width: 43%;
+    }
+
+    .properties-text h1 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .portfolio :nth-child(4) img {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .social a {
+        display: flex;
+        width: 4%;
+        margin-left: 3%;
+        margin-right: 3%;
+        height: 50px;       
+    }
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 510px) {
+
+    /* For Mobile Phones */
+
+    .navbar-fixed-top {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0%;
+        height: 80%;
+    }
+
+    .nav-logo {
+        visibility: visible;
+        margin-left: 25%;
+        margin-top: 1%;
+        width: 50%;
+    }
+
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        margin-top: 20%;
+    }
+    
+    .overlay a {
+        display: flex;
+        text-decoration: none;
+        color: #818181;
+        transition: 0.3s;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+      
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: -10vw;
+        width: auto;
+        font-size: 40px;
+    }
+    
+    .overlay-content a {
+        font-size: 20px;
+        margin: 80px;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        position: absolute;
+        width: fit-content;
+        color: #333333;
+        background-color: transparent;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: small;
+        align-items: center;
+    }
+
+    main {
+        height: auto;
+        display: block;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+
+    .properties-text {
+        margin-left: 22.5%;
+        width: 55%;
+    }
+
+    .properties-text h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .portfolio :nth-child(4) img {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .container {
+        font-size: 3vw;
+    }
+
+    .social a {
+        display: flex;
+        width: 8%;
+        margin-left: 4%;
+        margin-right: 4%;
+        height: 50px;       
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    /* For Small screens */
+    
+    .navbar-fixed-top {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0%;
+        height: 80%;
+    }
+
+    .nav-logo {
+        visibility: visible;
+        margin-left: 25%;
+        margin-top: 0%;
+        width: 50%;
+    }
+
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        margin-top: 20%;
+    }
+    
+    .overlay a {
+        display: flex;
+        text-decoration: none;
+        color: #818181;
+        transition: 0.3s;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+      
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: -10vw;
+        width: auto;
+        font-size: 40px;
+    }
+    
+    .overlay-content a {
+        font-size: 20px;
+        margin: 80px;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        position: absolute;
+        width: fit-content;
+        color: #333333;
+        background-color: transparent;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: small;
+        align-items: center;
+    }
+
+    main {
+        height: auto;
+        display: block;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+
+    .properties-text {
+        margin-left: 22.5%;
+        width: 55%;
+    }
+
+    .properties-text h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .portfolio :nth-child(4) img {
+        height: 22vh;
+        width: 100%;
+    }
+
+    .container {
+        font-size: 3vw;
+    }
+
+    .social a {
+        display: flex;
+        width: 8%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 50px;       
+    }
+
 }
