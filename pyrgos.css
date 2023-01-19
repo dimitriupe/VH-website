@@ -1523,8 +1523,8 @@ span a {
     }
 
     .properties-text {
-        margin-left: 10%;
-        width: 80%;
+        margin-left: 0%;
+        width: 100%;
     }
 
     .properties-text h1 {
@@ -1534,11 +1534,11 @@ span a {
 
     .properties-text p {
         width: 100%;
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
 
     .properties-text a {
-        font-size: 2.5vw;
+        font-size: 3.2vw;
     }
 
     video {
@@ -1546,9 +1546,9 @@ span a {
     }
 
     .new-developments p {
-        font-size: 1.9vw;
-        width: max-content;
-        margin-left: -5%;
+        font-size: 2.5vw;
+        width: fit-content;
+        text-align: center;
     }
 
     .n-d-first-row {
@@ -1559,8 +1559,7 @@ span a {
     }
 
     .n-d-first-row-yoo-img {
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
         margin-bottom: 5%;
     }
 
@@ -1572,16 +1571,16 @@ span a {
 
     .n-d-first-row-yoo-text p {
         width: auto;
+        font-size: 2.2vw;
     }
 
     .n-d-first-row-yoo-text a {
-        width: 42%;
-        margin-left: 29%;
+        width: 30vw;
+        margin-left: 25%;
     }
 
     .n-d-first-row-zaria-img {
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
     }
 
     .n-d-first-row-zaria-text {
@@ -1592,11 +1591,12 @@ span a {
 
     .n-d-first-row-zaria-text p {
         width: auto;
+        font-size: 2.2vw;
     }
 
     .n-d-first-row-zaria-text a {
-        width: 42%;
-        margin-left: 29%;
+        width: 30vw;
+        margin-left: 25%;
     }
 
     .n-d-second-row {
@@ -1607,8 +1607,7 @@ span a {
 
     .n-d-second-row-ccc-img {
         display: block;
-        width: 64%;
-        /* margin-bottom: 5%; */
+        width: 80%;
     }
 
     .n-d-second-row-ccc-text {
@@ -1619,17 +1618,17 @@ span a {
 
     .n-d-second-row-ccc-text p {
         width: auto;
+        font-size: 2.2vw;
     }
 
     .n-d-second-row-ccc-text a {
-        width: 42%;
-        margin-left: 29%;
+        width: 30vw;
+        margin-left: 25%;
     }
 
     .n-d-second-row-beyond-img {
         display: block;
-        width: 64%;
-        margin-right: 8%;
+        width: 80%;
         margin-top: 53vh;
     }
 
@@ -1641,11 +1640,12 @@ span a {
 
     .n-d-second-row-beyond-text p {
         width: auto;
+        font-size: 2.2vw;
     }
 
     .n-d-second-row-beyond-text a {
-        width: 42%;
-        margin-left: 29%;
+        width: 30vw;
+        margin-left: 25%;
     }
 
     .n-d-third-row {
@@ -1656,8 +1656,8 @@ span a {
     }
 
     .n-d-third-row-interc-img {
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        margin-left: 0%;
     }
 
     .n-d-third-row-interc-text {
@@ -1668,16 +1668,20 @@ span a {
 
     .n-d-third-row-interc-text p {
         width: auto;
+        font-size: 2.2vw;
     }
 
     .n-d-third-row-interc-text a {
-        width: 24vw;
-        margin-left: 16vw;
+        width: 30vw;
+        margin-left: 15vw;
         text-align: center;
     }
 
     .existing-developments-text p {
-        font-size: 1.9vw;
+        font-size: 2.5vw;
+        line-height: inherit;
+        width: fit-content;
+        text-align: center;
     }
 
     .row {
