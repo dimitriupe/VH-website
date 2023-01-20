@@ -159,7 +159,11 @@ function openModal() {
 }
 
 function closeModal() {
-  modal.remove();
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.remove();
+    }
+  }
 }
 
 var slideIndexes = 0;
@@ -196,7 +200,7 @@ function respondToPresssedKey(e) {
       break;
     case 'Escape':
       // run your Escape code here
-      closeModal();
+      modal.remove();
       console.log('Escape Key Pressed');
       break;
   }
@@ -214,3 +218,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+

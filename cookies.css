@@ -312,7 +312,10 @@ span a {
 
   .fa-tiktok {
     color: #eba49d;
-    
+  }
+
+  .fa-tiktok:hover {
+    opacity: 0.7;
   }
   
   footer .heart {
@@ -694,6 +697,11 @@ span a {
         margin-left: 5%;
     }
 
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
     a {
         display: flex;
         text-decoration: none;
@@ -825,6 +833,11 @@ span a {
         margin-left: 5%;
     }
 
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
     a {
         display: flex;
         text-decoration: none;
@@ -855,6 +868,15 @@ span a {
 
     main li:first-child {
         width: auto;
+    }
+
+    span p,
+    span a {
+        font-size: 4vw;
+    }
+
+    .copyright {
+        font-size: 4vw;
     }
 
     .social a {

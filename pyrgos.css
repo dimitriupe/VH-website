@@ -51,6 +51,9 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
 }
 
 html, body {
@@ -204,14 +207,14 @@ main {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  background-color: #d9d9d9;
-  color: gray;
-  opacity: 50%;
+  background-color: #f1f1f1;
+  color: #333333;
+  opacity: 30%;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  border: 0.5px solid gray;
+  /* border: 0.5px solid gray; */
   user-select: none;
 }
 
@@ -226,10 +229,11 @@ main {
     border-radius: 3px 0 0 3px;
   }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a grey background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  opacity: 100%;
+  background-color: #d9d9d9;
+  color: #333333;
+  opacity: 50%;
 }
 
 /* Caption text */
@@ -244,14 +248,14 @@ main {
 } */
 
 /* Number text (1/4 etc) */
-.numbertext {
+/* .numbertext {
   color: #333333;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
   margin-left: 20%;
-}
+} */
 
 /* The dots/bullets/indicators */
 .dot {
@@ -309,6 +313,10 @@ main {
 
 .properties-text a {
     display: inline;
+}
+
+.properties-text a:hover {
+    color: #eba49d;
 }
 
 video {
@@ -794,7 +802,7 @@ video {
     margin-bottom: -4px;
   } */
   
-  .caption-container {
+  /* .caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
@@ -817,7 +825,7 @@ video {
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 70%;
-  }
+  } */
 
 footer {
     background-color: #333333;
@@ -860,7 +868,7 @@ span a {
     margin: 0;
     font-size: 30px;
     text-decoration: none;
-  }
+}
   
   .fa:hover {
       opacity: 0.7;
@@ -885,10 +893,14 @@ span a {
   .fa-tiktok {
     color: #eba49d;
   }
+
+  .fa-tiktok:hover {
+    opacity: 0.7;
+  }
   
   footer .heart {
     color: #eba49d;
-}
+  }    
 
 @media only screen and (min-width: 1535px) {
     /* For Large Desktop Screens: */
@@ -1378,7 +1390,7 @@ span a {
 
     .n-d-third-row-interc-text a {
         width: 24vw;
-        margin-left: 16vw;
+        margin-left: 20vw;
     }
 
     .existing-developments-text p {
@@ -1489,7 +1501,7 @@ span a {
         width: fit-content;
         color: #333333;
         background-color: transparent;
-        margin-top: 4%;
+        margin-top: 5%;
         margin-left: 5%;
     }
 
@@ -1520,6 +1532,11 @@ span a {
 
     .next {
         right: 0%;
+    }
+
+    .dot {
+        width: 2vw;
+        height: 2vw;
     }
 
     .properties-text {
@@ -1722,7 +1739,7 @@ span a {
     .nav-logo {
         visibility: visible;
         margin-left: 25%;
-        margin-top: 0%;
+        margin-top: 1%;
         width: 50%;
     }
 
@@ -1753,6 +1770,11 @@ span a {
         width: fit-content;
         text-align: center;
         margin-top: 20%;
+    }
+
+    .overlay-content a {
+        font-size: 20px;
+        margin: 80px;
     }
     
     .overlay a {
@@ -1785,7 +1807,7 @@ span a {
         width: fit-content;
         color: #333333;
         background-color: transparent;
-        margin-top: 4%;
+        margin-top: 5%;
         margin-left: 5%;
     }
 
@@ -1816,6 +1838,11 @@ span a {
 
     .next {
         right: 0%;
+    }
+
+    .dot {
+        width: 2vw;
+        height: 2vw;
     }
 
     .properties-text {
@@ -1998,6 +2025,15 @@ span a {
     .column img {
         width: 100%;
         margin-bottom: 5%;
+    }
+
+    span p,
+    span a {
+        font-size: 4vw;
+    }
+
+    .copyright {
+        font-size: 4vw;
     }
 
     .social a {
