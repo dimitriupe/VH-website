@@ -636,22 +636,8 @@ span a {
   main {
       height: auto;
       display: block;
-      margin-top: 10vh;
+      margin-top: 5vh;
       margin-bottom: 10vh;
-  }
-
-  .mySlides img {
-    max-width: 100%;
-    height: 50%;
-    margin-left: 0;
-  }
-
-  .prev {
-      left: 0%
-  }
-
-  .next {
-      right: 0%;
   }
 
   .dot {
@@ -665,7 +651,7 @@ span a {
   }
 
   .properties-text h1 {
-      font-size: 2.5vw;
+      font-size: 2.2vw;
       text-align: center;
   }
 
@@ -744,27 +730,13 @@ span a {
   main {
       height: auto;
       display: block;
-      margin-top: 10vh;
+      margin-top: 5vh;
       margin-bottom: 10vh;
   }
 
-  .mySlides img {
-    max-width: 100%;
-    height: 50%;
-    margin-left: 0;
-  }
-
-  .prev {
-      left: 0%
-  }
-
-  .next {
-      right: 0%;
-  }
-
   .dot {
-      width: 1.6vw;
-      height: 1.6vw;
+      width: 1.4vw;
+      height: 1.4vw;
   }
 
   .properties-text {
@@ -773,7 +745,7 @@ span a {
   }
 
   .properties-text h1 {
-      font-size: 2.5vw;
+      font-size: 2.2vw;
       text-align: center;
   }
 
@@ -1076,6 +1048,7 @@ span a {
   .distances {
     width: 100%;
     margin-left: -15%;
+    text-align: left;
   }
 
   .distances img {
