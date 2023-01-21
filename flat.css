@@ -579,7 +579,7 @@ span a {
   .distances {
     width: 100%;
     text-align: justify;
-    margin-left: 5%;
+    margin-left: 0%;
   }
 
   .distances img {
@@ -674,7 +674,7 @@ span a {
   .distances {
     width: 100%;
     text-align: justify;
-    margin-left: 5%;
+    margin-left: 3%;
   }
 
   .distances img {
@@ -769,14 +769,14 @@ span a {
   .distances {
     width: 100%;
     text-align: justify;
-    margin-left: 5%;
+    margin-left: 2%;
   }
 
   .distances img {
     position: absolute;
     width: 3%;
-    height: 5%;
-    margin-top: 0.5%;
+    height: 4%;
+    margin-top: 0%;
     margin-left: -3.5%;
   }
 
@@ -901,7 +901,7 @@ span a {
 
   .distances li {
       justify-content: left;
-      font-size: 2.3vw;
+      font-size: 2.2vw;
   }
 
   .distances li:nth-child(5) {
@@ -911,7 +911,7 @@ span a {
   .distances a {
       width: auto;
       text-align: left;
-      font-size: 2.3vw;
+      font-size: 2.2vw;
   }
 
   .social a {
@@ -1083,7 +1083,7 @@ span a {
 
   .distances li {
       justify-content: left;
-      font-size: 2.3vw;
+      font-size: 2.2vw;
   }
 
   .distances li:nth-child(5) {
@@ -1093,7 +1093,7 @@ span a {
   .distances a {
       width: auto;
       text-align: left;
-      font-size: 2.3vw;
+      font-size: 2.2vw;
   }
 
   span p,
@@ -1240,7 +1240,7 @@ span a {
   }
 
   .properties-text h1 {
-      font-size: 3.6vw;
+      font-size: 3.4vw;
       text-align: center;
   }
 
