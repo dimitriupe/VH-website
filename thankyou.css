@@ -60,7 +60,6 @@ html, body {
     font-family: 'Play', sans-serif;
 	width: 100%;
 	margin: 0 auto;
-    /* perspective: 100%; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -113,20 +112,33 @@ header a {
     width: auto;
 }
 
+header span {
+    display: none;
+}
+  
+.nav-logo {
+    margin-left: 17vw;
+    width: 10vw;
+}
+
 .navbar-fixed-top {
     display: flex;
     width: 100%;
 }
 
-#navigation img {
-    width: 350px;
-    height: auto;
+.closebtn {
+    display: none;
+}
+  
+.overlay-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
 }
 
 ul {
     align-items: center;
     height: 100%;
-    width: 100%;
 }
 
 li {
@@ -145,7 +157,7 @@ a {
     justify-content: center;
     text-decoration: none;
     color: #333333;
-    font-size: x-large;
+    font-size: 1vw;
     align-items: center;
     width: 100%;
 }
@@ -159,10 +171,12 @@ a:hover {
 }
 
 main {
-    height: 130px;
-    margin-top: 9.5%;
+    margin-top: 16%;
     margin-bottom: 9.5%;
-    width: 100%;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .thankyou {
@@ -176,11 +190,11 @@ main {
 }
 
 .thankyou h1 {
-    font-size: xx-large;
+    font-size: 2.2vw;
 }
 
 .thankyou h2 {
-    font-size: larger;
+    font-size: 1.2vw;
 }
 
 .picb4footer {
@@ -198,11 +212,12 @@ main {
     text-align: center;
     background-color: #333333;
     color: #eba49d;
+    border-radius: 5px;
     width: 10%;
     font-size: medium;
     padding: 8px;
     height: 12%;
-    margin-top: 15%;
+    margin-top: 18%;
     transition: 0.5s;
 }
 
@@ -217,7 +232,7 @@ footer {
     color: #d9d9d9;
     text-align: center;
     width: 100%;
-    height: auto;
+    height: 100%;
     bottom: 0px;
 }
 
@@ -290,4 +305,517 @@ span a {
   
   footer .heart {
     color: #eba49d;
+}
+
+@media only screen and (min-width: 1535px) {
+    /* For Large Desktop Screens: */
+  
+    .nav-logo {
+      margin-left: 1vw;
+      width: 100%;
+    }
+  
+    .overlay-content {
+      width: 60vw;
+      margin-left: -12vw;
+    }
+  
+    li {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin-right: 9vw;
+    }
+  
+    .nav-item a {
+        font-size: 1.5vw;
+    }
+  
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+  
+    main {
+        height: auto;
+        display: block;
+        margin-top: 40vh;
+        margin-bottom: 40vh;
+    }
+  
+    .social a {
+        display: flex;
+        width: 3%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        height: 50px;       
+    }
+  
+  }
+  
+  @media only screen and (min-width: 1366px) and (max-width: 1535px) {
+    /* For Desktops: */
+  
+    .nav-logo {
+      margin-left: 1vw;
+      width: 100%;
+    }
+  
+    .overlay-content {
+      width: 60vw;
+      margin-left: -12vw;
+    }
+  
+    li {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin-right: 7vw;
+    }
+  
+    .nav-item a {
+        font-size: 1.5vw;
+    }
+  
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+  
+    main {
+        height: auto;
+        display: block;
+        margin-top: 40vh;
+        margin-bottom: 42vh;
+    }
+
+    .picb4footer a {
+        width: 10%;
+        font-size: 1vw;
+        margin-top: 40vh;
+    }
+  
+    .social a {
+        display: flex;
+        width: 3%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        height: 50px;       
+    }   
+}
+  
+  @media only screen and (min-width: 864px) and (max-width: 1366px) {
+    /* For Laptops and Desktops: */
+  
+    .nav-logo {
+      margin-left: 1vw;
+      width: 100%;
+    }
+  
+    .overlay-content {
+      width: 60vw;
+      margin-left: -12vw;
+    }
+  
+    li {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin-right: 7vw;
+    }
+  
+    .nav-item a {
+        font-size: 1.8vw;
+    }
+  
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+  
+    main {
+        height: auto;
+        display: block;
+        margin-top: 45vh;
+        margin-bottom: 42vh;
+    }
+
+    .thankyou {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .thankyou h1 {
+        font-size: 3vw;
+    }
+
+    .thankyou h2 {
+        font-size: 1.5vw;
+    }
+
+    .picb4footer a {
+        width: 12%;
+        font-size: 1.2vw;
+        margin-top: 40vh;
+    }
+  
+    .social a {
+        display: flex;
+        width: 3%;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 50px;       
+    }
+  
+  }
+  
+  @media only screen and (min-width: 511px) and (max-width: 864px) {
+  
+    /* For Tablets */
+  
+    .nav-logo {
+      margin-left: 1vw;
+      width: 100%;
+    }
+  
+    .overlay-content {
+      width: 60vw;
+      margin-left: -12vw;
+    }
+  
+    li {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin-right: 7vw;
+    }
+  
+    .nav-item a {
+        font-size: 2.5vw;
+    }
+  
+    .nav-link3 {
+        width: 18vw;
+    }
+  
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+  
+    main {
+        height: auto;
+        display: block;
+        margin-top: 43vh;
+        margin-bottom: 47vh;
+    }
+  
+    .thankyou {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .thankyou h1 {
+        font-size: 3.5vw;
+    }
+
+    .thankyou h2 {
+        font-size: 1.8vw;
+    }
+
+    .picb4footer a {
+        width: 15%;
+        font-size: 1.4vw;
+        margin-top: 40vh;
+    }
+  
+    .social a {
+        display: flex;
+        width: 4%;
+        margin-left: 3%;
+        margin-right: 3%;
+        height: 50px;       
+    }
+  
+  }
+  
+  @media only screen and (min-width: 361px) and (max-width: 511px) {
+  
+    /* For Mobile Phones */
+  
+    .navbar-fixed-top {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-left: 0%;
+      height: 80%;
+    }
+  
+    .nav-logo {
+        visibility: visible;
+        margin-left: 25%;
+        margin-top: 2%;
+        width: 50%;
+    }
+  
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        margin-top: 20%;
+    }
+  
+    .overlay-content a {
+        font-size: 20px;
+        margin: 80px;
+    }
+  
+    .overlay a {
+        display: flex;
+        text-decoration: none;
+        color: #818181;
+        transition: 0.3s;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+  
+    .nav-item {
+        justify-content: center;
+    }
+  
+    .closebtn {
+        right: -10vw;
+        width: auto;
+        position: absolute;
+        top: 20px;
+        font-size: 40px;
+    }
+  
+    .hamburger {
+        display: inline-flex;
+        position: absolute;
+        width: fit-content;
+        color: #333333;
+        background-color: transparent;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+  
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+  
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: small;
+        align-items: center;
+    }
+  
+    main {
+        height: auto;
+        display: block;
+        margin-top: 44vh;
+        margin-bottom: 46vh;
+    }
+  
+    .thankyou {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .thankyou h1 {
+        font-size: 4vw;
+    }
+
+    .thankyou h2 {
+        font-size: 2.5vw;
+    }
+
+    .picb4footer a {
+        width: 20%;
+        font-size: 1.8vw;
+        margin-top: 44vh;
+    }
+  
+    span p,
+    span a {
+        font-size: 3vw;
+    }
+  
+    .copyright {
+        font-size: 3vw;
+    }
+  
+    .social a {
+        display: flex;
+        width: 6%;
+        margin-left: 4%;
+        margin-right: 4%;
+        height: 50px;       
+    }
+  
+  }
+  
+  @media only screen and (max-width: 360px) {
+    /* For Small screens */
+    
+    .navbar-fixed-top {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-left: 0%;
+      height: 80%;
+    }
+  
+    .nav-logo {
+        visibility: visible;
+        margin-left: 25%;
+        margin-top: 2%;
+        width: 50%;
+    }
+  
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        margin-top: 20%;
+    }
+  
+    .overlay-content a {
+        font-size: 20px;
+        margin: 80px;
+    }
+  
+    .overlay a {
+        display: flex;
+        text-decoration: none;
+        color: #818181;
+        transition: 0.3s;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+  
+    .nav-item {
+        justify-content: center;
+    }
+  
+    .closebtn {
+        right: -10vw;
+        width: auto;
+        position: absolute;
+        top: 20px;
+        font-size: 40px;
+    }
+  
+    .hamburger {
+        display: inline-flex;
+        position: absolute;
+        width: fit-content;
+        color: #333333;
+        background-color: transparent;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+  
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+    }
+  
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        font-size: small;
+        align-items: center;
+    }
+  
+    main {
+        height: auto;
+        display: block;
+        margin-top: 45vh;
+        margin-bottom: 46vh;
+    }
+  
+    .thankyou {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .thankyou h1 {
+        font-size: 4vw;
+    }
+
+    .thankyou h2 {
+        font-size: 2.5vw;
+    }
+
+    .picb4footer a {
+        width: 23%;
+        font-size: 2.2vw;
+        margin-top: 43vh;
+    }
+  
+    span p,
+    span a {
+        font-size: 4vw;
+    }
+  
+    .copyright {
+        font-size: 4vw;
+    }
+    
+    .social a {
+        display: flex;
+        width: 8%;
+        margin-left: 4%;
+        margin-right: 4%;
+        height: 50px;       
+    }
+  
 }
