@@ -9,8 +9,6 @@
         <script src="https://kit.fontawesome.com/31ef6f6c9b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!-- <div id="circle" class="circle"></div>
-        <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script> -->
         <button class="back-to-top hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
@@ -19,23 +17,24 @@
         <script src="script.js" defer></script>
         <header id="navbar">
             <nav id="navigation" class="navbar-fixed-top">
-                <a href="index.html"><img src="img/Venus Holdings dark - Copy.png" alt="Venus Holdings Logo" title="Home Page"></a>
-                <ul class="navbar-fixed-top">
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
-                    <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
-                </ul>
+                <a href="index.html" class="nav-logo"><img src="img/Venus Holdings dark - Copy.png" alt="Venus Holdings Logo"></a>
+                <div id="myNav" class="overlay">
+                    <ul class="overlay-content">
+                        <li class="nav-item"><a href="about.html" class="nav-link1">About</a></li>
+                        <li class="nav-item"><a href="properties.html" class="nav-link2">Properties</a></li>
+                        <li class="nav-item"><a href="contactus.html" class="nav-link3">Contact Us</a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                <span style="font-size:30px;cursor:pointer" class="hamburger" id="hamburger" onclick="openNav()">&#9776;</span>
             </nav>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburger w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
         </header>
         <main>
             <div class="properties-text">
                 <h1>Field at Fasoula, Limassol</h1>
             </div>
             <div class="slideshow-container">
-                <div class="mySlides fade" style="display:block">
+                <div class="mySlides fade">
                   <!-- <div class="numbertext">1 / 7</div> -->
                   <img src="/img/fasoula/Fasoula-google-earth2.jpg" style="width:100%" alt="fasoula-google-earth-photo2">
                 </div>
@@ -97,9 +96,9 @@
                 <a href="//www.instagram.com/venusholdings.eu" target="_blank" class="fa fa-instagram"></a>
                 <a href="https://www.youtube.com/@VenusHoldingsLtd" target="_blank" class="fa fa-youtube"></a>
                 <a href="https://maps.app.goo.gl/W5tmagbVcbmrDaF49" target="_blank" class="fa fa-google"></a>
-                <a href="https://www.tiktok.com/@venusholdings" target="_blank" class="fa-brands fa-tiktok"></a>
+                <a href="https://www.tiktok.com/@venusholdings" target="_blank" class="fa-brands fa-tiktok fa-2xl"></a>
             </div>
-            <p>© 2022 Venus Holdings. All Rights Reserved.</p><br>
+            <p class="copyright">© 2023 Venus Holdings. All Rights Reserved.</p><br>
             <p class="heart">vh♡⌂</p><br>
         </footer>
     </body>
