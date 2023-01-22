@@ -150,12 +150,6 @@ li {
     justify-content: left;
 }
 
-/* .overlay-content li {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-} */
-
 .overlay-content li:nth-child(2) {
   text-decoration: underline;
 }
