@@ -667,7 +667,7 @@ span a {
   .distances {
     width: 100%;
     text-align: justify;
-    margin-left: 5%;
+    margin-left: 12%;
   }
 
   .distances img {
@@ -686,6 +686,7 @@ span a {
   .distances a {
       width: auto;
       text-align: left;
+      margin-left: 0.5%;
   }
 
   .social a {
@@ -761,7 +762,7 @@ span a {
   .distances {
     width: 100%;
     text-align: justify;
-    margin-left: 5%;
+    margin-left: 12%;
   }
 
   .distances img {
@@ -780,6 +781,7 @@ span a {
   .distances a {
       width: auto;
       text-align: left;
+      margin-left: 0.5%;
   }
 
   .social a {
@@ -894,6 +896,7 @@ span a {
   .distances a {
       width: auto;
       text-align: left;
+      margin-left: 0.5%;
   }
 
   .social a {
@@ -1047,7 +1050,7 @@ span a {
 
   .distances {
     width: 100%;
-    margin-left: -15%;
+    margin-left: -13%;
     text-align: left;
   }
 
@@ -1056,7 +1059,7 @@ span a {
     width: 5%;
     height: 3%;
     margin-top: 1%;
-    margin-left: -6%;
+    margin-left: -5%;
   }
 
   .distances li {
@@ -1065,16 +1068,21 @@ span a {
   }
 
   .distances li:first-child {
-    margin-left: 6%;
+    margin-left: 0%;
   }
 
   .distances li:nth-child(2) {
     width: 125%;
   }
 
+  .distances li:nth-child(4) {
+    width: 125%;
+  }
+
   .distances a {
       width: auto;
       text-align: left;
+      margin-left: 0%;
   }
 
   .social a {
@@ -1227,7 +1235,8 @@ span a {
 
   .distances {
     width: 100%;
-    margin-left: -15%;
+    margin-left: -13%;
+    text-align: left;
   }
 
   .distances img {
@@ -1235,7 +1244,7 @@ span a {
     width: 5%;
     height: 3%;
     margin-top: 0%;
-    margin-left: -6%;
+    margin-left: -5%;
   }
 
   .distances li {
@@ -1244,16 +1253,21 @@ span a {
   }
 
   .distances li:first-child {
-    margin-left: 6%;
+    margin-left: 0%;
   }
 
   .distances li:nth-child(2) {
     width: 125%;
   }
 
+  .distances li:nth-child(4) {
+    width: 125%;
+  }
+
   .distances a {
       width: auto;
       text-align: left;
+      margin-left: 0%;
   }
 
   span p,
