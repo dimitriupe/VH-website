@@ -573,7 +573,7 @@ span a {
   .distances {
     width: 100%;
     text-align: justify;
-    margin-left: 0%;
+    margin-left: 8.5%;
   }
 
   .distances img {
@@ -668,7 +668,7 @@ span a {
   .distances {
     width: 100%;
     text-align: justify;
-    margin-left: 3%;
+    margin-left: 11%;
   }
 
   .distances img {
@@ -761,9 +761,9 @@ span a {
   }
 
   .distances {
-    width: 100%;
+    width: auto;
     text-align: justify;
-    margin-left: 2%;
+    margin-left: 13%;
   }
 
   .distances img {
@@ -881,7 +881,7 @@ span a {
 
   .distances {
     width: 100%;
-    margin-left: -15%;
+    margin-left: -2%;
     text-align: left;
   }
 
@@ -896,10 +896,6 @@ span a {
   .distances li {
       justify-content: left;
       font-size: 2.2vw;
-  }
-
-  .distances li:nth-child(5) {
-    width: 123%;
   }
 
   .distances a {
@@ -1063,7 +1059,7 @@ span a {
 
   .distances {
     width: 100%;
-    margin-left: -15%;
+    margin-left: -2%;
     text-align: left;
   }
 
@@ -1078,10 +1074,6 @@ span a {
   .distances li {
       justify-content: left;
       font-size: 2.2vw;
-  }
-
-  .distances li:nth-child(5) {
-    width: 123%;
   }
 
   .distances a {
@@ -1253,7 +1245,7 @@ span a {
 
   .distances {
     width: 100%;
-    margin-left: -15%;
+    margin-left: -2%;
     text-align: left;
   }
 
@@ -1268,10 +1260,6 @@ span a {
   .distances li {
       justify-content: left;
       font-size: 2.3vw;
-  }
-
-  .distances li:nth-child(5) {
-    width: 123%;
   }
 
   .distances a {
