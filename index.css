@@ -145,7 +145,7 @@ ul {
 li {
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 a {
@@ -162,8 +162,12 @@ a:hover {
     color: #eba49d;
 }
 
+.hamburger {
+    display: none;
+}
+
 main {
-    height: 1400px;
+    height: 100%;
     display: block;
 }
 
@@ -271,7 +275,7 @@ span a {
     color: #eba49d;
 }
 
-@media only screen and (min-width: 1536px) {
+@media only screen and (min-width: 1535px) {
     /* For Large Desktop Screens: */
 
     .nav-logo {
