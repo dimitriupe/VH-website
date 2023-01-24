@@ -1007,6 +1007,10 @@ span a {
         margin-left: 35%;
     }
 
+    .n-d-third-row {
+        margin-top: 6%;
+    }
+
     .n-d-third-row-interc-text {
         margin-top: -19.5%;
     }
@@ -1111,6 +1115,10 @@ span a {
         margin-top: 3%;
     }
 
+    .n-d-second-row {
+        margin-top: -6%;
+    }
+
     .n-d-second-row-ccc-text {
         margin-top: 1vh;
     }
@@ -1147,6 +1155,10 @@ span a {
         width: 35%;
         margin-left: 32.5%;
         margin-top: 3%;
+    }
+
+    .n-d-third-row {
+        margin-top: -1%;
     }
 
     .n-d-third-row-interc-img {
@@ -1354,7 +1366,7 @@ span a {
         display: block;
         width: 64%;
         margin-right: 8%;
-        margin-top: 55vh;
+        margin-top: 54vh;
     }
 
     .n-d-second-row-beyond-text {
@@ -1374,7 +1386,7 @@ span a {
 
     .n-d-third-row {
         display: block;
-        margin-top: 10vh;
+        margin-top: 7vh;
         width: 100%;
     }
 
