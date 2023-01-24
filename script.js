@@ -98,12 +98,12 @@ function initModal() {
     id: 'myModal',
     className: 'modal',
     children: [
-      {
-        tag: 'span',
-        className: 'close cursor',
-        onclick: closeModal,
-        innerHTML: '&times;'
-      },
+      // {
+      //   tag: 'span',
+      //   className: 'close cursor',
+      //   onclick: closeModal,
+      //   innerHTML: '&times;'
+      // },
       {
         tag: 'div',
         className: 'modal-content',
