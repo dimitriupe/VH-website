@@ -215,6 +215,12 @@ video {
     opacity: 0.8;
 }
 
+.about-text #eu-flag {
+    position: absolute;
+    margin-top: 0.5vh;
+    margin-left: 0.3vw;
+}
+
 .icons {
     display: flex;
     justify-content: space-evenly;
